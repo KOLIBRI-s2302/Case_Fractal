@@ -1,7 +1,5 @@
 import time
 
-import levi
-import minkowski
 import carpet as carp
 import flower
 import hex
@@ -9,9 +7,12 @@ import ice_1 as ice_1
 import ice_2
 import koch_curve
 import koch_snow
-import local_RU as RU
+import levi
+import minkowski
 import square
 import sun
+import tree
+import local_RU as RU
 
 print('=' * 40)
 
@@ -33,6 +34,7 @@ print(RU.HEXAGON)
 print(RU.MINKOWSKI)
 print(RU.LEVI)
 print(RU.ICE_2)
+print(RU.TREE)
 
 print('=' * 40)
 
@@ -59,3 +61,5 @@ if choice == 10:
     levi.levi()
 if choice == 11:
     ice_2.ice_2()
+if choice == 12:
+    tree.tree()
