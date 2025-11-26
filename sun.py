@@ -42,9 +42,9 @@ def sun():
                 right(60)
                 sun_rec(order - 1, size, color)
                 right(150)
-                sun_rec(order - 1, size * 3  0.5, color)
+                sun_rec(order - 1, size * 3  ** 0.5, color)
                 left(120)
-                sun_rec(order - 1, size * 3  0.5, color)
+                sun_rec(order - 1, size * 3 **  0.5, color)
                 right(150)
 
     sun_rec(order, size, color)
