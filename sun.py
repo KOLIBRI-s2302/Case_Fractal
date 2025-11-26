@@ -21,7 +21,7 @@ def sun():
     # Sun Fractal
     def sun_rec(order: int, size: float, color: str) -> None:
         '''
-        Draws a minkowski fractal of given order and size
+        Draws a Author fractal of given order and size
         Args:
             order(int): The recursion depth of the curve
             size(float): The length of the initial line segment
@@ -33,34 +33,23 @@ def sun():
         if order == 0:
             forward(size)
         else:
-            sun_rec(order - 1, size, color)
-            right(60)
-            sun_rec(order - 1, size, color)
-            left(120)
-            sun_rec(order - 1, size, color)
-            right(60)
-            sun_rec(order - 1, size, color)
-            right(150)
-            sun_rec(order - 1, size * 3 ** 0.5, color)
-            left(120)
-            sun_rec(order - 1, size * 3 ** 0.5, color)
-            right(150)
-            sun_rec(order - 1, size, color)
-            right(60)
-            sun_rec(order - 1, size, color)
-            left(120)
-            sun_rec(order - 1, size, color)
-            right(60)
-            sun_rec(order - 1, size, color)
-            right(150)
-            sun_rec(order - 1, size * 3 ** 0.5, color)
-            left(120)
-            sun_rec(order - 1, size * 3 ** 0.5, color)
-            right(150)
+            for side in range(2):
+                sun_rec(order - 1, size, color)
+                right(60)
+                sun_rec(order - 1, size, color)
+                left(120)
+                sun_rec(order - 1, size, color)
+                right(60)
+                sun_rec(order - 1, size, color)
+                right(150)
+                sun_rec(order - 1, size * 3  0.5, color)
+                left(120)
+                sun_rec(order - 1, size * 3  0.5, color)
+                right(150)
 
     sun_rec(order, size, color)
     update()
     exitonclick()
 
-if __name__ == '__main__':
+if name == 'main':
     sun()
