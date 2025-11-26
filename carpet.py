@@ -1,4 +1,3 @@
-import turtle
 from turtle import *
 
 import local_RU as RU
@@ -46,8 +45,8 @@ def carpet():
             right(90)
 
     carp_rec(size, depth, color)
-    turtle.update()
-    turtle.exitonclick()
+    update()
+    exitonclick()
 
 if __name__ == '__main__':
     carpet()
