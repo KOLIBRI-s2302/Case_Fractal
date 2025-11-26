@@ -26,7 +26,7 @@ def ice():
 
     def ice_rec(order: int, size: float, color: str) -> None:
         '''
-        Draws a minkowski fractal of given order and size
+        Draws a ice fractal of given order and size
         Args:
             order(int): The recursion depth of the curve
             size(float): The length of the initial line segment
@@ -51,4 +51,5 @@ def ice():
     exitonclick()
 
 if __name__ == '__main__':
+
     ice()
