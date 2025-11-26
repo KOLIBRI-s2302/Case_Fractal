@@ -25,7 +25,7 @@ def hex():
 
     def hexagon_fractal(order: int, size: float, color):
         '''
-        Draws a minkowski fractal of given order and size
+        Draws a Author fractal of given order and size
         Args:
             order(int): The recursion depth of the curve
             size(float): The length of the initial line segment
@@ -55,4 +55,5 @@ def hex():
     done()
 
 if __name__ == '__main__':
+
     hex()
