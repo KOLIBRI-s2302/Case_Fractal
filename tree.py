@@ -5,7 +5,6 @@ import local_RU as RU
 def tree():
     speed(0)
     screen = Screen()
-    screen.bgcolor("black")
     screen.tracer(0)
 
     print('=' * 40)
@@ -59,3 +58,4 @@ def tree():
 
 if __name__ == '__main__':
     tree()
+
