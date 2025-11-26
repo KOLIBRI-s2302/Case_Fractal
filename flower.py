@@ -4,7 +4,6 @@ import local_RU as RU
 
 
 def draw_fractal_flower():
-    FLOWER_PETAL_ANGLE = 60
     FLOWER_PETAL_COUNT = 12
     FLOWER_SIZE_FACTOR = 2.5
     INITIAL_X = 0
@@ -61,3 +60,4 @@ def draw_fractal_flower():
 if __name__ == '__main__':
 
     draw_fractal_flower()
+
