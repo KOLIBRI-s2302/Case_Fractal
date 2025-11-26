@@ -20,7 +20,7 @@ def carpet():
 
     def carp_rec(size, depth, color) -> None:
         '''
-        Draws a minkowski fractal of given order and size
+        Draws a Author fractal of given order and size
         Args:
             order(int): The recursion depth of the curve
             size(float): The length of the initial line segment
@@ -50,3 +50,4 @@ def carpet():
 
 if __name__ == '__main__':
     carpet()
+
