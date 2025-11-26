@@ -30,18 +30,11 @@ def tree():
         pencolor(color)
 
         if size > 5:
-            # Рисуем ветку
             forward(size)
-
-            # Поворачиваем направо и рисуем правую ветку
             right(20)
-            tree_drawing(order, size - 15, color)
-
-            # Поворачиваем налево и рисуем левую ветку
+            tree_drawing(order, size - 15, color) 
             left(40)
             tree_drawing(order, size - 15, color)
-
-            # Возвращаемся в исходное положение
             right(20)
             backward(size)
 
@@ -58,4 +51,5 @@ def tree():
 
 if __name__ == '__main__':
     tree()
+
 
