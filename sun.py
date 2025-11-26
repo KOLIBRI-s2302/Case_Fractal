@@ -51,5 +51,6 @@ def sun():
     update()
     exitonclick()
 
-if name == 'main':
+if __name__ == '__main__':
     sun()
+
